@@ -1,0 +1,3 @@
+Photos produits ARIANE : un PNG par produit (fond transparent), nommé avec l'identifiant dans script.js :
+milano.png, nocella.png, plata.png, rustika.png, rena.png, trax.png, saturn.png,
+tandim-duo.png, tandim-trio.png, soly.png, first.png, maestro.png

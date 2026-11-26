@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contactez TECMECA et ARIANE pour une demande professionnelle, une question sur nos produits ou une demande de distribution.">
+  <meta name="theme-color" content="#172451">
+  <title>Contact — ARIANE | TECMECA</title>
+  <link rel="icon" href="images/favicon-32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script>try{if(localStorage.getItem('ariane-sidebar')==='collapsed')document.documentElement.classList.add('sidebar-collapsed')}catch(e){}</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="mobile-bar">
+    <a class="brand" href="index.html" aria-label="ARIANE, accueil"><img src="images/ariane-logo.png" alt="ARIANE"></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+  </header>
+  <div class="page-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navigation principale">
+      <div class="sidebar-top">
+        <a class="brand" href="index.html" aria-label="ARIANE, accueil"><img src="images/ariane-logo.png" alt="ARIANE"><span>by TECMECA</span></a>
+        <button class="sidebar-toggle" type="button" aria-controls="sidebar" aria-expanded="true" aria-label="Réduire le menu"><span class="icon-collapse" aria-hidden="true">«</span><span class="icon-close" aria-hidden="true">×</span></button>
+      </div>
+      <p class="side-label">VOTRE QUOTIDIEN, NOTRE SAVOIR-FAIRE</p>
+      <nav class="side-nav">
+        <a href="index.html" data-label="Accueil"><span class="nav-icon" aria-hidden="true">⌂</span><span class="nav-text">Accueil</span></a>
+        <a href="products.html" data-label="Nos produits"><span class="nav-icon" aria-hidden="true">▦</span><span class="nav-text">Nos produits</span></a>
+        <a href="about.html" data-label="À propos"><span class="nav-icon" aria-hidden="true">◈</span><span class="nav-text">À propos</span></a>
+        <a href="contact.html" data-label="Contact" aria-current="page"><span class="nav-icon" aria-hidden="true">✉</span><span class="nav-text">Contact</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-note"><span class="status-dot" aria-hidden="true"></span><p><strong>Fabriqué en Algérie</strong><br>Un savoir-faire local depuis plus de 25 ans.</p></div>
+        <a class="sidebar-phone" href="tel:+213550667847" data-label="+213 550 66 78 47"><span class="nav-icon" aria-hidden="true">☏</span><span class="nav-text" dir="ltr">+213 550 66 78 47</span></a>
+      </div>
+    </aside>
+    <div class="sidebar-backdrop" aria-hidden="true"></div>
+    <main class="main-content" id="main">
+      <section class="page-intro">
+        <p class="eyebrow"><span class="eyebrow-mark"></span> On est à votre écoute</p>
+        <h1>Parlons de<br><em>votre projet.</em></h1>
+        <p>Une demande pro, une question sur nos produits ou une envie de distribution ? Écrivez-nous, nous vous répondrons avec plaisir.</p>
+      </section>
+      <section class="contact-layout">
+        <div class="contact-details">
+          <p class="eyebrow">Coordonnées</p>
+          <h2>Restons en contact.</h2>
+          <a class="contact-item" href="tel:+213550667847"><span class="contact-icon" aria-hidden="true">↗</span><span><small>Téléphone & WhatsApp</small><strong dir="ltr">+213 550 66 78 47</strong></span></a>
+          <a class="contact-item" href="mailto:info@tecmecasarl.com"><span class="contact-icon" aria-hidden="true">✉</span><span><small>Adresse e-mail</small><strong>info@tecmecasarl.com</strong></span></a>
+          <div class="contact-item"><span class="contact-icon" aria-hidden="true">⌖</span><span><small>Siège</small><strong>Z.I. Oued Smar, BP 53<br>Alger, Algérie</strong></span></div>
+          <div class="contact-item"><span class="contact-icon" aria-hidden="true">⌖</span><span><small>Usine</small><strong>Zone d'activité Oulad Moussa<br>Boumerdès, Algérie</strong></span></div>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Tecmeca+Sarl+-+Ariane+Oued+Smar" target="_blank" rel="noopener noreferrer">Voir l'adresse sur la carte <span aria-hidden="true">↗</span></a>
+        </div>
+        <form class="contact-form" id="contact-form" data-contact-form>
+          <p class="eyebrow">Écrivez-nous</p>
+          <h2>Comment pouvons-nous vous aider ?</h2>
+          <label for="contact-name">Votre nom <span aria-hidden="true">*</span></label>
+          <input id="contact-name" name="name" autocomplete="name" required>
+          <label for="contact-company">Entreprise <span class="optional">(facultatif)</span></label>
+          <input id="contact-company" name="company" autocomplete="organization">
+          <label for="contact-email">Votre e-mail <span aria-hidden="true">*</span></label>
+          <input id="contact-email" name="email" type="email" autocomplete="email" required>
+          <label for="contact-topic">Votre demande</label>
+          <select id="contact-topic" name="topic"><option>Demande d'informations</option><option>Demande professionnelle</option><option>Devenir distributeur</option><option>Question sur un produit</option><option>Autre</option></select>
+          <label for="contact-message">Votre message <span aria-hidden="true">*</span></label>
+          <textarea id="contact-message" name="message" rows="5" required></textarea>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <button class="button button-primary" type="submit">Continuer sur WhatsApp <span aria-hidden="true">→</span></button>
+          <p class="form-note">Votre message sera préparé dans WhatsApp pour que vous puissiez nous l'envoyer.</p>
+        </form>
+      </section>
+      <footer class="site-footer"><span>© <span data-year></span> SARL TECMECA — ARIANE</span><span>Fabriqué avec soin en Algérie.</span></footer>
+    </main>
+  </div>
+</body>
+</html>

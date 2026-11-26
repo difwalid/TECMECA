@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explorez le catalogue ARIANE : balais, seaux, chiffons, éponges et produits d'entretien fabriqués par TECMECA.">
+  <meta name="theme-color" content="#172451">
+  <title>Nos produits — ARIANE | TECMECA</title>
+  <link rel="icon" href="images/favicon-32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script>try{if(localStorage.getItem('ariane-sidebar')==='collapsed')document.documentElement.classList.add('sidebar-collapsed')}catch(e){}</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="mobile-bar">
+    <a class="brand" href="index.html" aria-label="ARIANE, accueil"><img src="images/ariane-logo.png" alt="ARIANE"></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+  </header>
+  <div class="page-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navigation principale">
+      <div class="sidebar-top">
+        <a class="brand" href="index.html" aria-label="ARIANE, accueil"><img src="images/ariane-logo.png" alt="ARIANE"><span>by TECMECA</span></a>
+        <button class="sidebar-toggle" type="button" aria-controls="sidebar" aria-expanded="true" aria-label="Réduire le menu"><span class="icon-collapse" aria-hidden="true">«</span><span class="icon-close" aria-hidden="true">×</span></button>
+      </div>
+      <p class="side-label">VOTRE QUOTIDIEN, NOTRE SAVOIR-FAIRE</p>
+      <nav class="side-nav">
+        <a href="index.html" data-label="Accueil"><span class="nav-icon" aria-hidden="true">⌂</span><span class="nav-text">Accueil</span></a>
+        <a href="products.html" data-label="Nos produits" aria-current="page"><span class="nav-icon" aria-hidden="true">▦</span><span class="nav-text">Nos produits</span></a>
+        <a href="about.html" data-label="À propos"><span class="nav-icon" aria-hidden="true">◈</span><span class="nav-text">À propos</span></a>
+        <a href="contact.html" data-label="Contact"><span class="nav-icon" aria-hidden="true">✉</span><span class="nav-text">Contact</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-note"><span class="status-dot" aria-hidden="true"></span><p><strong>Fabriqué en Algérie</strong><br>Un savoir-faire local depuis plus de 25 ans.</p></div>
+        <a class="sidebar-phone" href="tel:+213550667847" data-label="+213 550 66 78 47"><span class="nav-icon" aria-hidden="true">☏</span><span class="nav-text" dir="ltr">+213 550 66 78 47</span></a>
+      </div>
+    </aside>
+    <div class="sidebar-backdrop" aria-hidden="true"></div>
+    <main class="main-content" id="main">
+      <section class="page-intro">
+        <p class="eyebrow"><span class="eyebrow-mark"></span> Le catalogue ARIANE</p>
+        <h1>Des essentiels<br><em>bien pensés.</em></h1>
+        <p>Découvrez notre gamme de produits pour les sols, les surfaces et toute la maison.</p>
+      </section>
+      <section class="catalogue" aria-label="Catalogue des produits">
+        <div class="catalogue-tools">
+          <label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">Rechercher un produit</span><input id="product-search" type="search" placeholder="Rechercher un produit…" autocomplete="off"></label>
+          <label class="select-box"><span class="sr-only">Filtrer par catégorie</span><select id="category-filter"><option value="">Toutes les catégories</option><option value="sols">Sols</option><option value="surfaces">Surfaces</option><option value="cuisine">Cuisine</option><option value="salle-de-bain">Salle de bain</option><option value="linge">Linge</option><option value="autres">Autres</option></select></label>
+        </div>
+        <p class="catalogue-status" id="catalogue-status" role="status" aria-live="polite">Chargement du catalogue…</p>
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+      <footer class="site-footer"><span>© <span data-year></span> SARL TECMECA — ARIANE</span><span>Fabriqué avec soin en Algérie.</span></footer>
+    </main>
+  </div>
+</body>
+</html>
